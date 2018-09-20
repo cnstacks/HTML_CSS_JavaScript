@@ -4,9 +4,67 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>常用标签一之-ul,ol,div,img,span</title>
 </head>
 <body>
-
+<p style="height: 200px" id="p1">顶部</p>
+<div class="ulol">
+    <!--列表标签ul,ol-->
+    <!--无序列表ul-->
+    <ul type="none">
+        <li>我的账户</li>
+        <li>我的订单</li>
+        <li>我的优惠券</li>
+        <li>我的收藏</li>
+        <li>退出</li>
+    </ul>
+    <!--有序列表ol-->
+    <!--<ol type="I" >-->
+    <ol style="list-style: none">
+        <li>我的账户</li>
+        <li>我的订单</li>
+        <li>我的优惠券</li>
+        <li>我的收藏</li>
+        <li>退出</li>
+    </ol>
+</div>
+<!--div标签，division的缩写-->
+<div class="heading">
+    <!--heading的缩写:标题h1~h6，不建议随意使用h标签，更改文字大小-->
+    天晴天朗
+    <!--1、块级元素，独占一行-->
+    <h1>天晴天朗</h1>
+    <h2>天晴天朗</h2>
+    <h3>天晴天朗</h3>
+    <h4>天晴天朗</h4>
+    <h5>天晴天朗</h5>
+    <h6>天晴天朗</h6>
+    <!--不会有h7-->
+    <!--<h7>天晴天朗</h7>-->
+</div>
+<div  class="paragraph">
+    <p>我爱你<b>中国</b>，<i>亲爱的母亲</i>>，<u>我为你流泪</u>>，<s>也为你自豪！</s>></p>
+    <p>我爱你中国，亲爱的母亲，我为你流泪，也为你自豪！有一天我会变老，就像老杨树上的枝丫，可我还会一遍遍歌唱，就像我的生命！</p>
+</div>
+<div class="anchor">
+    <a href="http://cuixiaozhao.com" target="_blank" title="天晴天朗的博客园地址">天晴天朗</a>
+    <a href="./front.zip">课件下载</a>
+    <a href="mailto:tqtl@tqtl.org">联系我们</a>
+    <a href="#">回到顶部</a>
+    <a href="#p1">跳转到顶部的段落标签</a>
+    <!--JavaScript:是表示在触发<a>默认动作时候，执行一段JavaScript代码；而JavaScript:;表示什么都不执行；-->
+    <a href="javascript:alert('我爱你中国！')">执行Js代码</a>
+    <a href="javascript:;">什么都不执行</a>
+</div>
+<div class="images">
+    <!--img标签也是行内标签，行内快标签：1、在一行内展示；2、可设置宽高-->
+    <img src="./static/img/student.png" alt="图片加载失败时候显示-大学生" title="美女" style="width: 200px;height: 200px;">
+    <img src="./static/img/computer.png" alt="图片加载失败时候显示-计算机" title="帅哥" style="width: 200px;height: 200px;">
+</div>
+<!--
+1、块级元素：独占一行，可设置宽高，如果不设置宽高，default浏览器宽高；
+2、行内元素：在一行内展示，不能设置宽高，它的宽高根据内容去填充；
+3、行内块元素：在一行内展示，课设宽高；
+-->
 </body>
 </html>
