@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15-第五模块:Web开发基础15-类选择器</title>
+    <style type="text/css">
+        .title {
+            color: yellowgreen;
+            font-size: 20px;
+        }
+
+        .home {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+类选择器：
+1、所谓类选择器，就是class，用法：.class{},class与id非常相似，任何的标签都可以加类属性；
+2、id唯一，但是class是可以重复的，类即归类;
+3、id可以加多个，但是不规范，没人这么使用，所以就禁用；
+4、但是类可以添加多个，使用空格分隔，比如：<h3 class="title home">我是一个三级标题</h3>
+5、后面的属性把前面的属性给"层叠"，即覆盖；
+6、同一个标签中，可以携带多个类；
+7、类属性的使用，可以决定一个前端工程的水平高低；
+
+-->
+<div>
+    <h3 id="h t" class="title ">我是一个三级标题</h3>
+    <h3>我是一个三级标题</h3>
+    <h3 class="title home">我是一个三级标题</h3>
+    <h3>我是一个三级标题</h3>
+    <h3>我是一个三级标题</h3>
+    <h3>我是一个三级标题</h3>
+</div>
+</body>
+</html>
