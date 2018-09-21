@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17-第五模块:Web开发基础17-高级选择器</title>
+    <style type="text/css">
+        /*!*后代选择器,在CSS中使用频繁*!*/
+        /*div p{*/
+        /*color: red;*/
+        /*}*/
+        /*div div p{*/
+        /*color: blue;*/
+        /*}*/
+        /*.container div p{*/
+        /*color: green;*/
+        /*}*/
+
+        /*子代选择器a>P*/
+        .container > p {
+            color: yellowgreen;
+        }
+
+        /*交集选择器,公共的部分*/
+        h3 {
+            color: gray;
+            width: 300px;
+        }
+
+        .active {
+            font-size: 30px;
+        }
+
+        h3.active {
+            background-color: red;
+        }
+
+        /*组合选择器，也叫并集选择器,设置多个标签中的统一样式*/
+        a, h4, p {
+            color: #666;
+            font-size: 40px;
+            text-decoration: none;
+        }
+
+        /*   *号是通配符选择器,性能有些差！因为代表所有，推荐使用如下：*/
+        html, body, div, p, span, a {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!--
+1、高级选择器：
+    1.1 并集选择器；
+    1.2 交集选择器；
+    1.3 后代选择器；
+    1.4 子元素选择器；
+    1.5 属性选择器；
+-->
+<div class="container">
+    <p>我爱你中国！</p>
+    <div>
+        <p>我是段落啦！</p>
+        <a href="#">LuffyCity</a>
+    </div>
+    <p>cuixiaozhao</p>
+    <ul>
+        <li class="item">
+            <h3 class="active">我是一个h3!</h3>
+            <h4>我是一个h4标题</h4>
+        </li>
+        <li>
+            <h4>我是一个h4标题</h4>
+            <a href="#">BAT</a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
