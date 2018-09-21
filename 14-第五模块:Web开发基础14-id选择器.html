@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14-第五模块:Web开发基础14-id选择器</title>
+    <!--
+    id选择器：
+    1、通过#号进行选择;
+    2、id严格区分大小写；比如s1 ！= S1
+    3、通一个页面中id不能重复；
+    4、任何的标签都可以设置id，id命名规范——以字母开头，可以有数字、下划线并且严格区分大小写；
+    PS:玩好了类选择器，就等于玩好了CSS的 1/2;
+    -->
+    <style type="text/css">
+        #birthdate {
+            color: red;
+        }
+        #Birthdate{
+            font-size: 30px;
+        }
+        #box{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <span id="birthdate">1993年09月11日</span>
+    <span id="_irthdate">1993年09月11日</span>
+    <span id="Birthdate">1993年09月11日</span>
+</div>
+</body>
+</html>
