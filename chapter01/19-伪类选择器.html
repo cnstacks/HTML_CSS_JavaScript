@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19-伪类选择器</title>
+    <style type="text/css">
+        /*伪类选择器的爱恨原则:love hate*/
+        /*没有被访问的a标签的默认样式*/
+        .box ul li.item1 a:link {
+            color: gray;
+        }
+
+        /*访问过后的a标签的样式*/
+        .box ul li.item2 a:visited {
+            color: yellow;
+        }
+
+        /*鼠标悬停时候的a标签样式*/
+        .box ul li.item3 a:hover {
+            color: green;
+        }
+
+        /*鼠标点住的时候a标签的样式*/
+        .box ul li.item4 a:active {
+            color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+<!--div.box会自动生成如下内容-->
+<div class="box">
+    <ul>
+        <li class="item1">
+            <a href="#">崔晓昭</a>
+        </li>
+        <li class="item2">
+            <a href="#">崔晓珊</a>
+        </li>
+        <li class="item3">
+            <a href="#">崔晓丝</a>
+        </li>
+        <li class="item4">
+            <a href="#">崔晓磊</a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
