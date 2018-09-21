@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16-第五模块:Web开发基础16-如何正确的使用类选择器</title>
+    <style type="text/css">
+        .lv {
+            color: green;
+            font-size: 40px;
+        }
+
+        .lv2 {
+            color: green;
+            text-decoration: underline;
+        }
+
+        .lv3 {
+            color: black;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+
+        /*
+        1、相同的颜色；
+        2、相同的字体；
+        3、相同的下滑线；
+        */
+        .color-all {
+            color: green;
+        }
+
+        .font-all {
+            font-size: 40px;
+        }
+
+        .line-all {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<!--
+1、使用div>p*3快速生成层级标签；
+2、不要试图用一个类属性将我们的页面写完，这个标签要携带多个类，共同设置样式；
+3、每个类尽可能小，有公共的概念，能够让更多的标签去使用，降低程序耦合性提高程序可复用性；
+4、到底使用用id还是class？建议尽可能使用class选择器，除非特殊情况，id一般是用在js中，js通过id获取标签；
+-->
+<div>
+    <p class="lv">段落1</p>
+    <p class="lv2">段落2</p>
+    <p class="lv3">段落3</p>
+    <hr>
+    <p class="color-all font-all">大字体绿色</p>
+    <p class="color-all line-all">绿色小字体</p>
+    <p class="font-all line-all">大字体黑色</p>
+</div>
+</body>
+</html>
