@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10第五模块:WEB开发基础10-常用标签分类和嵌套规则</title>
+</head>
+<body>
+<!--标签分类-->
+<!--
+1、常见块状元素；
+2、常见行内元素；a、span、br、i、em；
+3、常见行内块元素；img、input；
+
+块级元素的特点；
+行内元素的特点；
+行内块元素的特点；
+-->
+<div class="wrapper">
+    <!--
+    块级元素：div p h1~h6 ol ul table form li
+    1、独占一行；
+    2、可以设置宽度和高度，如果设置了宽度和高度，则就是当前的宽度和高度；
+    3、如果宽度和高度没有设置，宽度就是父盒子的宽度，高度根据内容填充；
+    -->
+    <div class="left">
+        这里崔晓昭的战场
+        <div>这是我的一块区域
+            <!--<div>这是我的家人</div>-->
+            <ul>
+                <li>
+                    <h2>亲情</h2>
+                </li>
+                <li>
+                    <ol>
+                        <li>崔晓昭</li>
+                        <li>崔晓珊</li>
+                        <li>崔晓丝</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <!--
+            a span br i em strong label
+            行内元素:
+            1、在一行内展示，不能设置宽度和高度，宽度和高度根据内容填充！
+            -->
+            <a href="#" style="width: 200px;height: 100px;">百度</a>
+            <a href="#">天晴天朗</a>
+            <span style="width: 100px;height: 200px;">一些文本</span>
+        </div>
+        <!--
+        行内块元素：
+        1、在一行内展示；
+        2、可设置宽高；
+        -->
+        <div class="inline-block">
+            <img src="./static/img/student.png" alt="一张学生照片">
+            <input type="text" name="username" style="width: 200px;height: 200px">
+        </div>
+    </div>
+    <!--标签的嵌套规则
+
+    1、块元素可以包含内联元素或某些块元素，但内联元素却不能包含块元素，它只能包含其它的内联元素，例如：
+
+    <div><div></div><h1></h1><p><p></div> ✔️
+
+    <a href=”#”><span></span></a> ✔️
+
+    <span><div></div></span> ❌
+
+    2、块级元素不能放在p标签里面，比如
+
+    <p><ol><li></li></ol></p> ❌
+
+    <p><div></div></p> ❌
+
+    3、有几个特殊的块级元素只能包含内嵌元素，不能再包含块级元素，这几个特殊的标签是：
+
+    h1、h2、h3、h4、h5、h6、p
+    4、li元素可以嵌入ul，ol，div等标签
+        <ul>
+            <li>
+                <ul>
+                    <li>
+                        <div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <ol>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        -->
+</div>
+</body>
+</html>
