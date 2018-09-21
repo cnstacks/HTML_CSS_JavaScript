@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18-第五模块:Web开发基础18-属性选择器</title>
+    <style type="text/css">
+        /*根据属性查找*/
+        label[for] {
+            color: red;
+            font-size: 20px;
+        }
+
+        /*根据属性值进行查找*/
+        label[for='pwd'] {
+            color: yellowgreen;
+        }
+
+        /*找到所有以title开头的*/
+        label[for^='vip'] {
+            font-size: 40px;
+        }
+
+        /*找到所有以p2结尾的*/
+        label[for$='p2'] {
+            color: purple;
+        }
+
+        /*包含ser的*/
+        label[for*='ser'] {
+            color: orange;
+        }
+
+        /*表单中常用的属性*/
+        input[type='text'] {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+<!--属性选择器——通常在表单控件中使用比较频繁-->
+<div class="box">
+    <form action="">
+        <label for="user">用户名</label>
+        <input type="text" name="" id="user">
+        <label for="pwd">密码</label>
+        <label for="vip1">vip1</label>
+        <label for="vip2">vip2</label>
+        <label for="user2">用户2</label>
+        <label for="user3">用户3</label>
+    </form>
+</div>
+</body>
+</html>
