@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08第五模块:WEB开发基础 08-常用标签二之form标签</title>
+</head>
+<body>
+<div class="form">
+    <!--form表单是块级元素，被提交-->
+    <!--method默认是get请求-->
+    <form action="https://www.baidu.com" method="post">
+        <p>
+            <!--label标签的for属性一般与input中的id属性相一致！label标签是行内元素-->
+            <label for="usr">用户名:</label>
+            <!--行内块元素，placeholder显示input框内底部提示信息-->
+            <input type="text" name="username" id="usr" placeholder="请输入用户名">
+        </p>
+        <p>
+            <label for="pwd">密码:</label>
+            <!--placeholder以及disabled属性-->
+            <input type="password" name="password" id="pwd" placeholder="请输入密码">
+        </p>
+        <p>
+            <!--button按钮显示普通按钮，与form表单没有任何关系-->
+            <input type="button" name="btn" value="提交" disabled="disabled">
+            <!--提交form表单一般使用type=submit按钮-->
+            <input type="submit" name="btn" value="submit">
+        </p>
+    </form>
+    <button>按钮</button>
+</div>
+</body>
+</html>
