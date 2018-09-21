@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09第五模块:WEB开发基础 09-常用标签二-表单控件</title>
+</head>
+<body>
+<form action="" method="post">
+    <p>
+        <!--单选框,checked会被默认选中，产生互斥效果，name值要相等！-->
+        用户性别:
+        <input type="radio" name="sex" value="男" checked="checked">男
+        <input type="radio" name="sex" value="女">女
+    </p>
+    <p>
+        <!--复选框checkbox-->
+        用户的爱好:
+        <input type="checkbox" name="checkfav" value="吃" checked="checked">吃
+        <input type="checkbox" name="checkfav" value="喝">喝
+        <input type="checkbox" name="checkfav" value="玩">玩
+        <input type="checkbox" name="checkfav" value="乐">乐
+    </p>
+    <p>
+        <!--文件上传-->
+        <input type="file" name="textfile">
+    </p>
+    <p>
+        <!--下拉列表-->
+        <select name="sele" size="3" multiple="">
+            <option value="北京" selected>北京</option>
+            <option value="上海">上海</option>
+            <option value="广州">广州</option>
+            <option value="深圳">深圳</option>
+            <option value="杭州">杭州</option>
+            <option value="石家庄">石家庄</option>
+        </select>
+    </p>
+    <p>
+        <!--文本域textarea-->
+        <textarea name="txt" id="" cols="30" rows="10" placeholder="请输入自我介绍"></textarea>
+    </p>
+    <p>
+        <input type="submit" name="btn" value="submit">
+        <input type="reset" name="reset">
+    </p>
+</form>
+</body>
+</html>
