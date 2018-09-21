@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>12-第五模块:WEB开发基础12-css的三种引入方式</title>
+    <!--写我们的CSS代码,内接样式-->
+    <style type="text/css">
+        /*内接样式写我们的CSS代码*/
+        /*标签选择器，共性的，所有的。*/
+        span {
+            color: yellow;
+        }
+    </style>
+    <!--引入CSS文件的方式之链接式；-->
+    <link rel="stylesheet" href="./static/css/12/index.css">
+    <!--<style type="text/css">-->
+        <!--@import url('./static/css/12/index.css');-->
+    <!--</style>-->
+</head>
+<body>
+<!--
+   引入CSS的三种样式：
+   1、行内样式；
+   2、内接样式；
+   3、外接样式；
+       3.1 链接式；
+       3.2 导入式；
+   -->
+<div>
+    <p style="color: red;">我是一个段落!</p>
+</div>
+<div>
+    <div>
+        <span>我是另外一个段落！</span>
+        <span>我是另外一个段落！</span>
+        <span>我是另外一个段落！</span>
+        <a href="#">路飞学城</a>
+    </div>
+</div>
+</body>
+</html>
