@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS中的双重for循环</title>
+</head>
+<body>
+<script type="text/javascript">
+    // 学习前的补充内容：
+    document.write('cxz19930911');
+    document.write('<h1>崔晓昭</h1>');
+    document.write('<br/>');
+    //使用for循环进行循环写入；
+    for (var i = 1; i <= 10; i++) {
+        console.log(i);
+        document.write('我爱你，中国！')
+    }
+    //需求01：使用js代码打印"直角三角形"；
+    console.log('需求01：使用js代码打印"直角三角形"；');
+    for (i = 1; i <= 6; i++) {
+        for (var j = 1; j <= i; j++) {
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-JS中的数组Arra</title>
+</head>
+<body>
+<script type="text/javascript">
+    //JS中的数组Array，也可以叫做数组；
+    //1、字面量方式创建数组；
+    var colors = ['red', 'blue', 'green'];
+    console.log(colors);
+    console.log(window.colors);//其中，window可以省略不写；
+    console.log(colors[0]);
+    console.log(colors[1]);
+    console.log(colors[2]);
+    console.log(colors[-1]);
+    console.log(colors[5]);
+    //2、使用构造函数进行创建"数组"
+    var types = new Array();
+    console.log(types);
+    console.log(typeof types);
+    types[0] = 'S';
+    types[1] = 'M';
+    types[2] = 'L';
+    types[3] = 'XL';
+    types[4] = 'XXL';
+    types[5] = 'XXXL';
+    console.log(types);
+    for (var i = 0; i <= types.length; i++) {
+        console.log(types[i-1]);
+    }
+</script>
+</body>
+</html>
