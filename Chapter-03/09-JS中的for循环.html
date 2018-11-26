@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS中的for循环</title>
+</head>
+<body>
+<script type="text/javascript">
+    //需求：打印1~100之间的数字；
+    for (var i = 1; i <= 100; i++) {
+        console.log(i)
+    }
+    //使用js输入1~100之间的整数之和；
+    console.log('使用js输入1~100之间的整数之和；');
+    var sum = 0;
+    for (var j = 1; j <= 100; j++) {
+        sum += j;
+    }
+    console.log(sum);
+    //新需求：使用js中的for循环，输入1~100之间2的倍数；
+
+    console.log('新需求：使用js中的for循环，输入1~100之间2的倍数');
+    for (var m = 1; m <= 100; m++) {
+        if (m % 2 == 0) {
+            console.log(m);
+        }
+    }
+</script>
+</body>
+</html>
