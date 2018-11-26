@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS中的while循环</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    /*
+    1、初始化循环变量；
+    2、判断循环条件；
+    3、更新循环变量；
+    */
+    //举个例子；
+    var i = 1;
+    while (i <= 10) {
+        if (i % 2 == 0) {
+            console.log(i);
+        }
+        //i = i + 1;
+        i += 1;
+    }
+    console.log('将0~100之间的偶数打印出来:');
+    var n = 0;
+    while (n <= 100) {
+        console.log(n);
+        n += 2;
+    }
+    //do~while的用法；
+    console.log('do~while的用法！');
+    var m = 1;
+    do {
+        console.log(m);
+        m += 1;
+    } while (m <= 11);
+
+</script>
+</body>
+</html>
