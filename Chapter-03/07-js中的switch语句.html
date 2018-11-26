@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-js中的switch语句</title>
+</head>
+<body>
+<script type="text/javascript">
+    var gameScore = 'good911';
+    if (gameScore == 'good') {
+        console.log('小朋友，你真好！')
+
+    } else if (gameScore == 'better') {
+        console.log('小朋友，你更好啦！')
+    } else if (gameScore == 'best') {
+        console.log('小朋友，你最好啦！')
+    } else {
+        console.log('小朋友，不知道如何夸赞你啦！')
+    }
+    //js中switch的用法学习；
+    switch (gameScore) {
+        case 'good':
+            console.log('玩很很好呀！');
+            //swith语句，case一个条件，只要遇到break跳出流程控制，如果break不写，程序会进入下一个break;
+            //官方名称"case穿透"！
+            break;
+        case 'better':
+            console.log('玩很geng好呀！');
+            break;
+        case 'best':
+            console.log('玩很最好啦！');
+            break;
+        default:
+            console.log('玩的不知所措了,下一次一定会吃鸡的...');
+            break;
+    }
+</script>
+</body>
+</html>
