@@ -9,8 +9,8 @@
 <body>
 <script type="text/javascript">
     //if;
-    //if else;
-    var age = 16;
+    //if else if else;
+    let age = 16;
     if (age == 18) {
         //{}作为当前的作用域；
         console.log('可以去会所了！');
@@ -19,6 +19,19 @@
     } else {
         console.log('随便你啦！');
     }
+
+    //js中的"逻辑与"与"逻辑或"
+    let math = 91;
+    let english = 85;
+
+    if (math == 90 && english > 90) {
+        console.log('小朋友，这次考试成绩还不错哦!')
+    } else if (math < 90 || english > 90) {
+        console.log('有一门课程考的还可以吧！')
+    } else {
+        console.log('好好加油！')
+    }
+
 
     //作用域之外继续打印内容；
     console.log('作用域外的代码照样执行,和Python一样！');
