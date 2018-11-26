@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-JS中的数据的常见方法</title>
+</head>
+<body>
+<script type="text/javascript">
+    //1、数组的合并方法-concat；
+    var south = ['上海', '杭州', '深圳', '成都'];
+    var north = ['北京', '石家庄', '济南', '张家口'];
+    var china = south.concat(north);
+    console.log("中国南方的城市如下:", south);
+    console.log("中国北方的城市如下:", north);
+    console.log("南北方的城市群:", china);
+    //2、将数组中的元素以指定的'字符串'连接起来，它会返回一个新的字符串；
+    var birthday = [1993, 9, 11];
+    var birthdate = birthday.join('-');
+    console.log(birthdate);
+    //3、切片；slice(start,end),返回数组中的一段记录，即切片，但顾头不顾尾；
+    var arr = ['崔晓昭', '崔晓珊', '崔晓丝', '崔晓磊'];
+    var newArr = arr.slice(1, 14);
+    console.log(newArr);
+    //4、push和pop方法；
+    var nums = [12, 3, 4, 5, 6, 6, 9];
+    console.log(nums);
+    nums.pop();
+    console.log(nums);
+    nums.push(19930911);
+    console.log(nums);
+    //5、反转数组（reverse）和排序数组（sort）；
+    var names = ['cxz', 'cxs', 'cxl'];
+    console.log(names);
+    names.reverse();
+    console.log(names);
+    names.sort();
+    console.log(names);
+    //6、isArray判断是不是数组；
+    var citys = 19930911;
+    iscitys = Array.isArray(citys);
+    if (iscitys) {
+        console.log('他是一个数组');
+    } else {
+        console.log('他不是一个数组');
+    }
+    //7、遍历数组；forEach是一个回调函数，通过forEach来遍历数组中的每一项内容；
+    //item为对象值，index为索引值；
+    //注意Python中的列表方法和JavaScript中的不一样，没有就是没有了；
+    names2 = ['cxz', 'cxs', 'cxl'];
+    names.forEach(function (item, index) {
+        console.log(index + 1);
+        console.log(item);
+
+    })
+</script>
+</body>
+</html>
